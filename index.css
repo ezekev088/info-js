@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #dadada;
+  color: #000000;
+  text-align: center;
+}
+
+/* Logo */
+.Logo-container {
+  display: flex;
+  background-color: rgb(55, 63, 70);
+  justify-content: center;
+  padding: 0px;
+}
+
+.Logo {
+  width: 100%;
+  max-width: 290px;
+  margin-top: 20px;
+}
+
+/* Subtítulo */
+.Subtitulo {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  font-family: 'DM Serif Text', Courier, monospace;
+}
+
+/* Menú */
+.menu {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.Lista-Links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.Link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-family: 'DM Serif Text', Courier, monospace;
+  transition: color 0.3s ease;
+}
+
+.Link:hover {
+  color: rgb(255, 123, 0);
+}
+
+/* Imágenes destacadas */
+.Img-Contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.img {
+  width: 200px;
+}
+
+/* Intro texto */
+.Texto-intro {
+  text-align: center;
+  padding: 20px 100px;
+  background-color: rgba(72, 80, 79, 0.212);
+  color: #000000;
+}
+
+/* Productos */
+.Prod-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Prod-item {
+  text-align: center;
+  background-color: rgb(55, 63, 70);
+  padding: 10px;
+  border-radius: 5px;
+  width: 270px;
+  margin: 15px;
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.datos {
+  margin-top: 10px;
+}
+
+.Prod-tit {
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.precio {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.descuento {
+  color: rgb(255, 136, 0);
+  font-weight: bolder;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.cuotas {
+  margin-top: 5px;
+  color: rgb(255, 136, 0);
+}
+
+.compra {
+  background-color: #030303;
+  color: #f5f5f5;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.compra:hover {
+  background-color: rgb(255, 102, 0);
+}
+
+/* Mapa */
+.mapa-contenedor {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mapa {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(55, 63, 70);
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
+
+h4 {
+  margin-top: -17px;
+}
+
+/* Formulario */
+.form-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1e1e1e;
+  color: #dadada;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.Formulario input {
+  padding: 12px;
+}
+
+.enviar {
+  background-color: #ff6600;
+  color: #dadada;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+  .Texto-intro {
+    padding: 20px 60px;
+  }
+
+  .Prod-item {
+    width: 220px;
+  }
+
+  .img {
+    width: 180px;
+  }
+
+  .Subtitulo {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Texto-intro {
+    padding: 20px 40px;
+    font-size: 16px;
+  }
+
+  .Lista-Links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Prod-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Prod-item {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .img {
+    width: 150px;
+  }
+
+  .Subtitulo {
+    font-size: 22px;
+  }
+
+  .Logo {
+    max-width: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .Texto-intro {
+    padding: 15px 20px;
+  }
+
+  .Subtitulo {
+    font-size: 20px;
+  }
+
+  .img {
+    width: 120px;
+  }
+
+  .Prod-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .compra {
+    width: 100%;
+  }
+
+  .Formulario {
+    padding: 20px;
+  }
+}
