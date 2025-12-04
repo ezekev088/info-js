@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ====== Reset global ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ====== Links ====== */
+.inicio-sesion {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicio-sesion:hover {
+  color: rgb(255, 123, 0);
+}
+
+/* ====== Promo ====== */
+.promo-inicio {
+  background-color: rgb(255, 123, 0);
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  padding: 8px;
+  position: fixed;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.promo-inicio a {
+  display: inline-block;
+  padding-left: 100%;
+  animation: deslizar 12s linear infinite;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+/* ====== Header ====== */
+.Logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 50px 20px 0;
+  flex-wrap: wrap;
+}
+
+.Logo {
+  width: 100%;
+  max-width: 290px;
+  margin: 10px 0;
+}
+
+/* ====== Subtítulo ====== */
+.Subtitulo {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  font-family: 'DM Serif Text', serif;
+  color: rgb(0, 0, 0);
+}
+
+/* ====== Menú ====== */
+.Lista-Links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.Link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'DM Serif Text', serif;
+  transition: color 0.3s ease;
+}
+
+.Link:hover {
+  color: rgb(255, 123, 0);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.close-btn {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+/* ====== Imágenes destacadas ====== */
+.Img-Contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* ====== Texto Intro ====== */
+.Texto-intro {
+  text-align: center;
+  padding: 20px 5%;
+  background-color: rgba(72, 80, 79, 0.1);
+  color: #000;
+  font-size: 18px;
+}
+
+/*  Productos*/
+.Prod-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.Prod-item {
+  text-align: center;
+  background-color: rgb(55, 63, 70);
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 250px;
+  max-width: 100%;
+  color: #fff;
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.Prod-tit {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.precio,
+.descuento,
+.cuotas {
+  margin-top: 5px;
+}
+
+.descuento,
+.cuotas {
+  color: rgb(255, 136, 0);
+  font-weight: bolder;
+}
+
+.compra {
+  background-color: #030303;
+  color: #f5f5f5;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.compra:hover {
+  background-color: rgb(255, 102, 0);
+}
+
+/* Formulario*/
+.form-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1e1e1e;
+  color: #dadada;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.Formulario input {
+  padding: 12px;
+}
+
+.enviar {
+  background-color: #ff6600;
+  color: #dadada;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #0d0d0d;
+  padding: 40px 20px;
+  color: #ddd;
+  box-shadow: 0 -4px 12px #000;
+  margin-top: 60px;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 35px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-mapa iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 260px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #000;
+}
+
+.visitanos {
+  margin-bottom: 10px;
+  font-family: 'DM Serif Text', serif;
+}
+
+.footer-redes h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  color: #f58300;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icono {
+  font-size: 50px;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  transition: 0.3s;
+  border: 2px solid #333;
+}
+
+.icono:hover {
+  transform: scale(1.15);
+  border-color: #f58300;
+}
+
+.whatsapp:hover {
+  color: #25D366;
+}
+
+.instagram:hover {
+  color: #E1306C;
+}
+
+.tiktok:hover {
+  color: #69C9D0;
+}
+
+.footer-envios {
+  font-size: 18px;
+  text-align: start;
+  max-width: 200px;
+  color: #bbb;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.footer-envios a {
+  text-decoration: none;
+  color: #f58300;
+}
+
+.footer-copy {
+  background-color: #3c3c43;
+  margin-top: 25px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES*/
+
+
+@media (max-width: 768px) {
+  .Subtitulo {
+    font-size: 22px;
+  }
+
+  .Prod-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .Texto-intro {
+    padding: 15px 5%;
+  }
+
+  .Lista-Links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Logo-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .Subtitulo {
+    font-size: 20px;
+  }
+
+  .Prod-item {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .Texto-intro {
+    padding: 10px 5%;
+    font-size: 16px;
+  }
+
+  .promo-inicio {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .Img-Contenedor {
+    gap: 10px;
+  }
+
+  .img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+  }
+
+  .Lista-Links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .Lista-Links.active {
+    right: 0;
+  }
+
+  .close-btn {
+    display: block;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+    padding-bottom: 20px;
+  }
+
+  .Prod-item {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .Formulario {
+    padding: 20px;
+  }
+
+  .footer-contenedor {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Texto-intro {
+    padding: 10px 10px;
+  }
+}

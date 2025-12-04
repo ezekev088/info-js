@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+}
+body {
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.inicio-sesion {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* Promo inicio */
+.promo-inicio {
+    background-color: rgb(255, 123, 0);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    padding: 8px;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.promo-inicio a {
+    display: inline-block;
+    padding-left: 100%;
+    animation: deslizar 12s linear infinite;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+/* Logo y header */
+.Logo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: 0 20px;
+}
+
+.Logo {
+    width: 100%;
+    max-width: 290px;
+    margin-top: 20px;
+}
+
+/* Subtítulo */
+.Subtitulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: 'DM Serif Text', Courier, monospace;
+    color: black;
+}
+
+/* Menú de navegación */
+.Lista-Links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.Link {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-family: 'DM Serif Text', Courier, monospace;
+    transition: color 0.3s ease;
+}
+
+.Link:hover {
+    color: rgb(255, 123, 0);
+}
+
+/* Botón hamburguesa */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Botón de cierre dentro del menú */
+.close-btn {
+    display: none;
+    /* solo visible en móvil */
+    font-size: 28px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mensaje {
+    color: #f58300;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+.contenedor {
+    background: #111;
+    padding: 30px;
+    width: 380px;
+    margin: 60px 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px #000;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.titulo_principal {
+    color: rgb(106, 106, 106);
+    margin-top: 40px;
+  font-family: 'DM Serif Text', Courier, monospace;
+    margin-bottom: -20px;
+    font-style: italic;
+
+}
+
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #f58300;
+    outline: none;
+    box-shadow: 0 0 6px #f58300;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f58300;
+}
+
+.link-btn {
+    background: #333;
+}
+
+.link-btn:hover {
+    background: #f58300;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    gap: 8px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.checkbox input {
+    width: auto;
+    margin: 0;
+}

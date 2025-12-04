@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+
+  <header>
+        <div class="promo-inicio">
+            <a href="Formulario.html">¡Registrate y obtené 30% OFF + 12 cuotas sin interés en tus compras!</a>
+        </div>
+
+        <div class="Logo-container">
+            <img class="Logo" src="Media/Logo velmen.png" alt="Logo Velmen">
+
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="menu">
+                <ul class="Lista-Links" id="menu">
+
+                    <li class="close-btn" id="close-menu"><i class="fa-solid fa-xmark"></i></li>
+
+                    <li><a class="Link" href="index.html">Inicio</a></li>
+                    <li><a class="Link" href="#Promociones">Promociones</a></li>
+                    <li><a class="Link" href="#Productos">Productos</a></li>
+                    <li><a class="Link" href="#Contacto">Contacto</a></li>
+                    <li><a class="Link" href="#Sobrenosotros">Sobre nosotros</a></li>
+                <LI> <a href="Formulario.html" class="inicio-sesion"><ion-icon name="person-circle-outline"></a></ion-icon>
+        </DIV></LI>
+                </ul>
+
+                
+            </nav>
+        </div>
+
+    </header>
+
+    <div>
+        <h2 class="titulo_principal">¡Inicia sesión o registrate para obtener descuentos y promociones!</h2>
+    </div>
+    <div class="contenedor">
+        <div id="registro">
+            <h2>Registro</h2>
+            <input type="text" id="regUsuario" placeholder="Usuario" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="tel" id="regCel" placeholder="Celular" required>
+            <input type="password" id="regPassword" placeholder="Contraseña" required>
+            <div class="checkbox">
+                <input type="checkbox" id="chkRegPassword">
+                <label for="chkRegPassword">Mostrar contraseña</label>
+            </div>
+            <button onclick="registrar()">Registrarse</button>
+            <p id="mensajeRegistro" class="mensaje"></p>
+            <button id="btnMostrarLogin">Iniciar sesión</button>
+        </div>
+
+     
+        <div id="login" style="display:none;">
+            <h2>Iniciar Sesión</h2>
+            <input type="email" id="loginEmail" placeholder="Correo electrónico" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <div class="checkbox">
+                <input type="checkbox" id="chkLoginPassword">
+                <label for="chkLoginPassword">Mostrar contraseña</label>
+            </div>
+            <button onclick="iniciarSesion()">Iniciar sesión</button>
+            <p id="mensajeLogin" class="mensaje"></p>
+            <button id="btnMostrarRegistro">Registrarse</button>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Velmen. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>Síguenos en nuestras redes:</p>
+            <div class="redes">
+                <a href="https://wa.me/tu_numero" target="_blank" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/tu_usuario" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@tu_usuario" target="_blank" class="social-icon tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="Formulario.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script>
+      
+        document.getElementById("btnMostrarLogin").addEventListener("click", () => {
+            document.getElementById("registro").style.display = "none";
+            document.getElementById("login").style.display = "block";
+        });
+        document.getElementById("btnMostrarRegistro").addEventListener("click", () => {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("registro").style.display = "block";
+        });
+
+
+        document.getElementById("chkRegPassword").addEventListener("change", function () {
+            document.getElementById("regPassword").type = this.checked ? "text" : "password";
+        });
+        document.getElementById("chkLoginPassword").addEventListener("change", function () {
+            document.getElementById("loginPassword").type = this.checked ? "text" : "password";
+        });
+    </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Formulario.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+        const closeBtn = document.getElementById("close-menu");
+
+        // Abrir menú
+        hamburger.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        // Cerrar menú
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    </script>
+
+</body>
+
+</html>
